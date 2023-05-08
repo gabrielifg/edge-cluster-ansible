@@ -1,0 +1,14 @@
+[control_plane]
+10.16.0.150
+
+[worker_node]
+10.16.0.151
+10.16.0.152
+
+[control_plane:vars]
+ansible_ssh_private_key_file=/home/geduardo/.ssh/gabriel_key_ssh
+ansible_user=root
+
+[worker_node:vars]
+ansible_ssh_private_key_file=/home/geduardo/.ssh/gabriel_key_ssh
+ansible_user=root
